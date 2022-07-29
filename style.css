@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+img {
+  width: 17px;
+}
+button {
+  cursor: pointer;
+}
+body {
+  background-color: #808fb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+body h2 {
+  margin: 30px;
+  color: #0d2464;
+  font-weight: 600;
+}
+
+body h2 p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  margin: -10px;
+}
+body .container {
+  background-color: #fff;
+  width: 750px;
+  border-radius: 20px;
+  box-shadow: -2px 4px 30px -10px rgba(0, 0, 0, 0.75);
+}
+
+/* Header TOP Area*/
+body .container header {
+  padding: 30px 25px;
+}
+body .container header .hr-top {
+  margin-bottom: 30px;
+}
+body .container header .hr-top a {
+  text-decoration: none;
+  padding-right: 15px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0d2464;
+}
+body .container header .hr-top a.active {
+  border-bottom: 3px solid;
+  padding: 0 10px 10px 10px;
+}
+
+/* Header MIDDLE Area*/
+body .container header .hr-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+body .container header .hr-middle h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+}
+body .container header .hr-middle .middle-buttons button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #a4acc4;
+  margin-left: 5px;
+  color: #000;
+  font-weight: 500;
+}
+body .container header .hr-middle .middle-buttons {
+  display: flex;
+}
+body .container header .hr-middle .middle-buttons button img {
+  margin-right: 5px;
+}
+body .container header .hr-middle .middle-buttons button.new-button {
+  background: #0d2464;
+  color: #fff;
+  border-color: #0d2464;
+}
+body .container header .hr-middle .middle-buttons button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #a4acc4;
+  margin-left: 5px;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Header BOTTOM Area & BUTTON Area */
+body .container header .hr-bottom .bottom-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+body .container header .hr-bottom .bottom-top .b-t-middle {
+  display: flex;
+  align-items: center;
+}
+body .container header .hr-bottom .bottom-top .b-t-middle p {
+  font-size: 11px;
+  font-weight: 600;
+}
+body .container header .hr-bottom .bottom-top .b-t-middle img {
+  width: 13px;
+  height: 11px;
+  margin: 7px;
+}
+body .container header .hr-bottom .bottom-top .b-t-middle .bt-m-right {
+  margin-left: 25px;
+  display: flex;
+}
+
+body .container header .hr-bottom .bottom-top .b-t-middle .bt-m-right img {
+  width: 17px !important;
+  height: 17px !important;
+  margin-right: 0 !important;
+}
+
+/* Header INPUT Area */
+body .container header .hr-bottom .bottom-top .b-t-left {
+  position: relative;
+}
+body .container header .hr-bottom .bottom-top .b-t-left input[type='text'] {
+  width: 600px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #c3cbe3;
+}
+body .container header .hr-bottom .bottom-top .b-t-left img {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  width: 19px;
+}
+
+/* Header FILTER Area */
+body .container header .hr-bottom .bottom-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+body .container header .hr-bottom .bottom-bottom button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c3cbe3;
+  background-color: transparent;
+  color: #000;
+  padding: 5px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 11px;
+  margin-right: 5px;
+}
+body .container header .hr-bottom .bottom-bottom button.active {
+  border-color: #0d2464 !important;
+}
+body .container header .hr-bottom .bottom-bottom img {
+  width: 9px;
+  margin-left: 10px;
+}
+
+/** RESPONSIVE CODE */
+
+@media screen and (max-width: 800px) {
+  body .container {
+    width: 450px;
+  }
+  body .container header .hr-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .container header .hr-middle {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  body .container header .hr-middle .middle-buttons button {
+    margin-right: 5px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  body .container header .hr-bottom .bottom-top .b-t-left input[type='text'] {
+    width: 300px;
+  }
+  body .container header .hr-bottom .bottom-top .b-t-middle .bt-m-right {
+    margin-left: 5px;
+  }
+}
